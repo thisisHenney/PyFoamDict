@@ -1,0 +1,28 @@
+# 헤석 케이스의 폴더와 파일 정보
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Name              Path                                    Comment
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# system
+control             system/controlDict
+decomposePar        system/decomposeParDict
+fvOptions           system/fvOptions
+fvSchemes           system/fvSchemes
+fvSolution          system/fvSolution
+
+# constant
+regionProp          constant/regionProperties
+MRFProp             constant/MRFProperties
+transportProp       constant/transportProperties
+turbulenceProp      constant/turbulenceProperties
+
+# ------------------------------------------------------------------------------
+# settings
+# ------------------------------------------------------------------------------
+boundaryCon         system/settings/boundaryConditions
+cellZoneCon         system/settings/cellZoneConditions
+initCon             system/settings/initialConditions
+materials           system/settings/materials
+numericCon          system/settings/numericConditions
+radiationCon        system/settings/radiationConditions
+regionCon           system/settings/regionConditions
