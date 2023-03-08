@@ -1,4 +1,6 @@
 ## Update
+  - 2023.03.08 (001) : chaning var/func name
+    
   - 2022.04.19 (001) : bug fixed
 
   - 2022.03.18 (001) : files name changed
@@ -8,7 +10,7 @@
 ## PyFoamDict
 - This code is for reading and writing all OpenFOAM dictionary files with Python language
 
-  pip install PyFoamDict (making...)
+  pip install PyFoamDict (making...not yet)
 
 
 - Code Structure
