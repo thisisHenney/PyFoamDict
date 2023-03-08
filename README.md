@@ -1,6 +1,8 @@
-## Update
-  - 2023.03.08 (001) : chaning var/func name
-    
+## Notice 
+  - 2023.03.08 (001) : changing var/func name
+  
+
+## Update    
   - 2022.04.19 (001) : bug fixed
 
   - 2022.03.18 (001) : files name changed
