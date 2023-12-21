@@ -4,7 +4,6 @@
 
 import os
 
-from NextLibs.File import read_file
 from NextLibs.OpenFOAM.PyFoamDict.Tools.StringTool import (
     remove_comment, remove_empty
 )
@@ -47,7 +46,7 @@ class FoamCase:
 
         # Additional
         this_file_path = os.path.dirname(os.path.abspath(__file__))
-        file_data = read_file(this_file_path + info_path)
+        file_data = self.read_file(this_file_path + info_path)
 
         read_data = remove_comment(file_data, 0)
         read_data = remove_empty(read_data)
@@ -59,6 +58,13 @@ class FoamCase:
                 tmp_foam_data.set_file('%s/%s' % (self.case_path, d[1]))
                 if not d[0] in self.foam_file:
                     self.foam_file[d[0]] = tmp_foam_data
+
+    def read_file(self, path):
+        data = ''
+        if os.path.isfile(path):
+            with open(path, 'r') as f:
+                data = f.read()
+        return data
 
     def check_name(self, name=''):
         if not name or self.foam_file.get(name) is None:
@@ -119,4 +125,3 @@ if __name__ == '__main__':
     # Write
     fvSolution.set(['solvers', 'cellDisplacement', 'relTol'], '2')
     fvSolution.save()
-    
