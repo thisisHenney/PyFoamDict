@@ -8,7 +8,6 @@
     foam.set_case_path(case_path)
     foam.update()
 
-    // Read
     fvSolution = foam.foam_file['fvSolution']
     result = fvSolution.get_dict_list(['solvers'])
     print(result)
@@ -16,7 +15,6 @@
     result = fvSolution.get(['solvers', 'cellDisplacement', 'relTol'])
     print(result)
 
-     // Write
     fvSolution.set(['solvers', 'cellDisplacement', 'relTol'], '2')
     fvSolution.save()
 
