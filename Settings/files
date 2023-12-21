@@ -1,0 +1,20 @@
+# Path Definition of OpenFOAM dictionary files
+
+# ------------------------------------------------------------------------------
+# File Name         |   Path
+# ------------------------------------------------------------------------------
+# regionProp              constant/regionProperties
+# MRFProp                 constant/MRFProperties
+# transportProp           constant/transportProperties
+# turbulenceProp          constant/turbulenceProperties
+
+# boundary                constant/polyMesh/boundary
+
+# control                 system/controlDict
+# createBaffles           system/createBafflesDict
+# decomposePar            system/decomposeParDict
+# fvOptions               system/fvOptions
+# fvSchemes               system/fvSchemes
+# fvSolution              system/fvSolution
+meshDict                  system/meshDict
+# topoSet                 system/topoSetDict
