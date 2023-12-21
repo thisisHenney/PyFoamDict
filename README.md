@@ -1,6 +1,6 @@
 ## PyFoamDict Usage
 
-    Example
+> Example
        
     case_path = '/home/test/Desktop/TestCase'
 
@@ -19,7 +19,7 @@
     fvSolution.save()
 
 
-    Result
+> Result
 
     >> ['p_rgh', '"(U|T|k|epsilon)"', 'cellDisplacement']
     >> 1
