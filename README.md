@@ -1,6 +1,6 @@
 ## PyFoamDict Usage
 
-  case_path = '/home/test/Desktop/TestCase'
+    case_path = '/home/test/Desktop/TestCase'
 
     foam = FoamCase()
     foam.set_case_path(case_path)
